@@ -1,0 +1,62 @@
+<div class="grid-container">
+  <mat-grid-list cols="2" rowHeight="350px">
+    <!-- <div class="login">Bem vindo, {{nome}}</div> -->
+    <mat-grid-tile>
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <!-- <mat-card-title>
+            {{card.title}}
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+              <button mat-menu-item>Adicionar</button>
+              <button mat-menu-item>Remover</button>
+            </mat-menu>
+          </mat-card-title> -->
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <div>
+            <h3>Carteira</h3>
+          </div>
+          <img src="https://s5.static.brasilescola.uol.com.br/img/2018/06/exemplo-de-grafico-de-linhas.jpg"/>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card class="dashboard-card">
+          <mat-card-header>
+          </mat-card-header>
+          <mat-card-content class="dashboard-card-content">
+            <div>
+              <h3>Despesa</h3>
+            </div>
+            <table>
+              
+            </table>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile>
+          <mat-card class="dashboard-card">
+            <mat-card-header>
+              <!-- <mat-card-title>
+                {{card.title}}
+                <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+                  <mat-icon>more_vert</mat-icon>
+                </button>
+                <mat-menu #menu="matMenu" xPosition="before">
+                  <button mat-menu-item>Adicionar</button>
+                  <button mat-menu-item>Remover</button>
+                </mat-menu>
+              </mat-card-title> -->
+            </mat-card-header>
+            <mat-card-content class="dashboard-card-content">
+              <div>
+                <h3>{{card.title}}</h3>
+              </div>
+            </mat-card-content>
+          </mat-card>
+        </mat-grid-tile>
+  </mat-grid-list>
+</div>

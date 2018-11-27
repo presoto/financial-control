@@ -1,13 +1,20 @@
 .grid-container {
-  margin: 20px;
+  margin-top: 0px;
 }
+
+
 
 .dashboard-card {
   position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
+  top: 5px;
+  left: 10px;
+  right: 10px;
   bottom: 15px;
+  /* opacity: 0.8; */
+  background: #4667b2;
+  border-radius: 10px; 
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  
 }
 
 .more-button {
@@ -16,6 +23,17 @@
   right: 10px;
 }
 
+ h3{ /* Texto dos cards*/
+  color: #e9ebee; 
+  font-family: 'Merriweather', serif; 
+  font-size: 30px; 
+  font-weight: 300; 
+  line-height: 40px; 
+  margin: 0 30px 40px; 
+  text-align: center; 
+  text-shadow: 2px 2px  rgb(63, 63, 63)  ;
+
+}
 .dashboard-card-content {
-  text-align: center;
+
 }

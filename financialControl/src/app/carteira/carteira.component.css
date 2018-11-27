@@ -1,0 +1,58 @@
+.example-card {
+    /* max-width: 400px; */
+    text-align: center;
+    background-color: #4959B2
+}
+
+.example-card h1 {
+  font-size: 42px;
+  color: #4959b2;
+  font-weight: 500;
+  background-color: #FFF;
+  width: fit-content;
+  padding: 32px 190px;
+  margin: 0 auto;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  border-radius: 10px;
+  text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+ }
+.example-card h3 {
+  margin-top: 30px;
+  font-size: 50px;
+  color: rgb(216, 217, 219);
+  text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+}
+
+.login {
+  color: #E8EAED;
+  display: flex;
+  justify-content: flex-end;
+
+}
+  
+  .example-header-image {
+    background-image: url('http://www.mhcsa.org.au/wp-content/uploads/2016/08/default-non-user-no-photo.jpg');
+    background-size: cover;
+  }
+
+
+
+  .button-secondary {
+      color: #E8EAED;
+      border-radius: 4px;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+      background: rgb(66, 184, 221); /* this is a light blue */
+  }
+/*  */
+  /* font-size: 42px; */
+  /* color: #4959b2; */
+  /* font-weight: 500; */
+  /* background-color: #FFF; */
+  /* width: fit-content; */
+  /* padding: 32px 160px; */
+  /* box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); */
+  /* margin: 0 auto; */
+  /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); */
+/* } */
