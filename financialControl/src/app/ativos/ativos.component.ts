@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { AtivosService } from '../Services/ativos.service';
+
+
 
 @Component({
   selector: 'ativos',
@@ -7,9 +10,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AtivosComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private AtivosService: AtivosService,
+  ) { }
+  public ativos: any = []; // Vetor vazio
 
   ngOnInit() {
+    this.AtivosService.listar().subscribe(
+      dados => {
+        this.ativos = dados;
+        // console.log(this.ativos);
+      },
+      erro => console.error(erro)
+    );
   }
-
 }

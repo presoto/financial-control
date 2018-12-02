@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PassivosService } from '../Services/passivos.service';
+
 
 @Component({
   selector: 'passivos',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PassivosComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private PassivosService: PassivosService,
+  ) { }
+  public passivos: any = []; // Vetor vazio
 
   ngOnInit() {
+    this.PassivosService.listar().subscribe(
+      dados => {
+        this.passivos = dados;
+        // console.log(this.passivos);
+      },
+      erro => console.error(erro)
+    );
   }
-
 }

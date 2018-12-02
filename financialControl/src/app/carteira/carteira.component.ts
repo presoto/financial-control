@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CarteiraService } from '../Services/carteira.service';
 
 @Component({
   selector: 'carteira',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarteiraComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private CarteiraService: CarteiraService,
+  ) { }
+
+  public carteira: any = []; // Vetor vazio
 
   ngOnInit() {
+    this.CarteiraService.listar().subscribe(
+      dados => {
+        this.carteira = dados;
+        // console.log(this.carteira[0].valor);
+      },
+      erro => console.error(erro)
+    );
   }
 
 }

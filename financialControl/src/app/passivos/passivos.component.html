@@ -1,6 +1,22 @@
 <mat-card class="example-card">
   <mat-card-content>
-    <h1>- Passivos</h1>
+    <h1>- Passivos    <button mat-flat-button color="accent">Adicionar <mat-icon>add_circles</mat-icon></button></h1>
+ 
     <!-- <maintable></maintable> -->
+    <div style="overflow-x:auto;">
+      <table>
+        <tr>
+          <th>Origem</th>
+          <th>Valor</th>
+          <th>Data</th>
+        </tr>
+        <tr *ngFor="let passivo of passivos">
+          <td>{{passivo.origem}}</td>
+          <td>{{passivo.valor}}</td>
+          <td>{{passivo.data}}</td>
+          <td> <button mat-mini-fab color="warn"><mat-icon>clear</mat-icon></button></td>
+        </tr>
+      </table>
+    </div>
   </mat-card-content>
 </mat-card>
