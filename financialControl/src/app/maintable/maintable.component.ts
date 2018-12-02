@@ -13,7 +13,7 @@ export class MaintableComponent implements OnInit {
   dataSource: MaintableDataSource;
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = ['id', 'name'];
+  displayedColumns = ['Origem', 'Nome','Data','Editar'];
 
   ngOnInit() {
     this.dataSource = new MaintableDataSource(this.paginator, this.sort);

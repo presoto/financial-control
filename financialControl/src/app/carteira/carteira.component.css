@@ -29,11 +29,12 @@
   color: #E8EAED;
   display: flex;
   justify-content: flex-end;
+  text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
 }
   
   .example-header-image {
-    background-image: url('http://www.mhcsa.org.au/wp-content/uploads/2016/08/default-non-user-no-photo.jpg');
+    background-image: url('https://yt3.ggpht.com/a-/ACSszfFpSo81hfBJqWBqrsV9JjkLCdtKqIZAwsih6g=s900-mo-c-c0xffffffff-rj-k-no');
     background-size: cover;
   }
 
