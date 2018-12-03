@@ -12,4 +12,7 @@ export class PassivosService {
     return this.http.get("http://localhost:3000/passivos")
     
   }
+  deletar(codigo){
+    return this.http.delete(`http://localhost:3000/passivos/${codigo}`)
+  }
 }

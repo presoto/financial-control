@@ -23,5 +23,23 @@ export class AtivosComponent implements OnInit {
       },
       erro => console.error(erro)
     );
+  
   }
+
+  deletar(codigo){
+    this.AtivosService.deletar(codigo).subscribe(
+      dados => {
+        this.AtivosService.listar().subscribe(
+          dados => {
+            this.ativos = dados;
+            // console.log(this.ativos);
+          },
+          erro => console.error(erro)
+        );
+      },
+      erro => console.error(erro)
+    )
+    
+}
+
 }

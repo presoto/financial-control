@@ -23,4 +23,20 @@ export class PassivosComponent implements OnInit {
       erro => console.error(erro)
     );
   }
+  deletar(codigo){
+    console.log("cheguei aqui" , codigo)
+    this.PassivosService.deletar(codigo).subscribe(
+      dados => {
+        this.PassivosService.listar().subscribe(
+          dados => {
+            this.passivos = dados;
+            // console.log(this.ativos);
+          },
+          erro => console.error(erro)
+        );
+      },
+      erro => console.error(erro)
+    )
+    
+}
 }

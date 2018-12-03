@@ -12,8 +12,8 @@
         <tr *ngFor="let ativo of ativos">
           <td>{{ativo.origem}}</td>
           <td>{{ativo.valor}}</td>
-          <td>{{ativo.data}}</td>
-          <td> <button mat-mini-fab color="warn"><mat-icon>clear</mat-icon></button></td>
+          <td>{{ativo.data | date:'MM/dd/yyyy hh:mm:ss'}}</td>
+          <td> <button mat-mini-fab color="warn" (click)="deletar(ativo._id)"><mat-icon>clear</mat-icon></button></td>
         </tr>
       </table>
     </div>
