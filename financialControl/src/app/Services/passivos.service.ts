@@ -15,4 +15,8 @@ export class PassivosService {
   deletar(codigo){
     return this.http.delete(`http://localhost:3000/passivos/${codigo}`)
   }
+
+  adicionar(adicionar){
+    return this.http.put("http://localhost:3000/passivos",{codigo:adicionar.codigo,valor:adicionar.valor,origem:adicionar.origem,data:adicionar.data})
+  }
 }

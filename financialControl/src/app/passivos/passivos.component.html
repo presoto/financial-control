@@ -13,7 +13,7 @@
         <tr *ngFor="let passivo of passivos">
           <td>{{passivo.origem}}</td>
           <td>{{passivo.valor}}</td>
-          <td>{{passivo.data | date:'MM/dd/yyyy hh:mm:ss'}}</td>
+          <td>{{passivo.data | date:'dd/MM/yyyy'}}</td>
           <td> <button mat-mini-fab color="warn" (click)="deletar(passivo._id)"><mat-icon>clear</mat-icon></button></td>
         </tr>
       </table>

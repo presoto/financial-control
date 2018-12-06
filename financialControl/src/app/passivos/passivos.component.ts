@@ -24,13 +24,12 @@ export class PassivosComponent implements OnInit {
     );
   }
   deletar(codigo){
-    console.log("cheguei aqui" , codigo)
     this.PassivosService.deletar(codigo).subscribe(
       dados => {
         this.PassivosService.listar().subscribe(
           dados => {
             this.passivos = dados;
-            // console.log(this.ativos);
+            console.log(this.passivos);
           },
           erro => console.error(erro)
         );

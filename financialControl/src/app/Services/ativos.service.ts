@@ -17,7 +17,7 @@ export class AtivosService {
     return this.http.delete(`http://localhost:3000/ativos/${codigo}`)
   }
   
-  adicionar(codigo,valor,origem,data){
-    return this.http.put("http://localhost:3000/ativos",{codigo:codigo,valor:valor,origem:origem,data:data})
+  adicionar(adicionar){
+    return this.http.put("http://localhost:3000/ativos",{codigo:adicionar.codigo,valor:adicionar.valor,origem:adicionar.origem,data:adicionar.data})
   }
 }

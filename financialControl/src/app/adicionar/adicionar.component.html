@@ -1,23 +1,22 @@
 <div class="example-container">
   <mat-form-field>
-    <input matInput placeholder="Origem">
+    <input matInput placeholder="Origem" [(ngModel)]="adicionarPut.origem "> 
   </mat-form-field>
 
   <mat-form-field>
       <mat-label>Valor em R$</mat-label>
-      <input matInput type="number" placeholder="informe o valor" required name="quantidade">
+      <input matInput type="number" placeholder="informe o valor" required name="quantidade" [(ngModel)]="adicionarPut.valor ">
   </mat-form-field>
 
   <mat-form-field>
       <mat-label>Data</mat-label>
-      <input matInput type="date" placeholder="informe a data" required name="data">
+      <input matInput type="date" placeholder="informe a data" required name="data" [(ngModel)]="adicionarPut.data ">
   </mat-form-field>
 
   <mat-form-field>
-    <mat-select placeholder="Tipo">
+    <mat-select placeholder="Tipo" [(ngModel)]="adicionarPut.tipo" >
       <mat-option value="ativo">Ativo</mat-option>
       <mat-option value="passivo">Passivo</mat-option>
-
     </mat-select>
   </mat-form-field>
   <button mat-flat-button color="accent" (click)="adicionar()">Adicionar <mat-icon>add_circles</mat-icon></button>
