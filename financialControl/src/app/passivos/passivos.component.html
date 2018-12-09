@@ -11,10 +11,10 @@
           <th>Data</th>
         </tr>
         <tr *ngFor="let passivo of passivos">
-          <td>{{passivo.origem}}</td>
-          <td>{{passivo.valor}}</td>
+          <td><input [(ngModel)]="passivo.origem"></td>
+          <td><input [(ngModel)]="passivo.valor"></td>
           <td>{{passivo.data | date:'dd/MM/yyyy'}}</td>
-          <td>   <button mat-raised-button (click)="editar(passivo._id)">Editar</button></td>
+          <td> <button mat-raised-button (click)="editar(passivo)">Salvar</button></td>
           <td> <button mat-mini-fab color="warn" (click)="deletar(passivo._id)"><mat-icon>clear</mat-icon></button></td>
         </tr>
       </table>

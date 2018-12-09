@@ -10,10 +10,10 @@
           <th>Data</th>
         </tr>
         <tr *ngFor="let ativo of ativos">
-          <td>{{ativo.origem}}</td>
-          <td>{{ativo.valor}}</td>
+          <td><input [(ngModel)]="ativo.origem"></td>
+          <td><input [(ngModel)]="ativo.valor"></td>
           <td>{{ativo.data | date:'dd/MM/yyyy'}}</td>
-          <td> <button mat-raised-button (click)="editar(passivo._id)">Editar</button></td>
+          <td> <button mat-raised-button (click)="editar(ativo)">Salvar</button></td>
           <td> <button mat-mini-fab color="warn" (click)="deletar(ativo._id)"><mat-icon>clear</mat-icon></button></td>
         </tr>
       </table>

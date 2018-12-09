@@ -39,7 +39,21 @@ export class AtivosComponent implements OnInit {
       },
       erro => console.error(erro)
     )
-    
+}
+editar(editar) {
+  this.AtivosService.editar(editar).subscribe(
+    dados => {
+      this.AtivosService.listar().subscribe(
+        dados => {
+          this.ativos = dados;
+          // console.log(this.ativos);
+        },
+        erro => console.error(erro)
+      );
+      console.log("deu certo editar", dados);
+    },
+    erro => console.error(erro)
+  );
 }
 
 }
