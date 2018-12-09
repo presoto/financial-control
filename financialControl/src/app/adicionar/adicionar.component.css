@@ -1,20 +1,42 @@
 .example-container {
+    margin-top: 100px;
     display: flex;
     font-size: 30px;
     flex-direction: column;
     /* max-width: 80%; */
     text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    
 
       }
   
-  .example-container > * {
-    
-  }
 
   .mat-form-field{
     /* color: aliceblue; */
     /* background-color: white; */
-    margin-left: 40%;
+    /* margin: 0 auto; */
+    margin-left: 37%;
     max-width: 500px;
     text-align: center;
   }
+
+  .button{
+    width: 530px;
+    text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+     margin: 0 auto;
+    color: #4959B2;
+    background-color: white   
+  }
+
+  h1 {
+    font-size: 42px;
+    color: white;
+    font-weight: 500;
+    background-color:  rgb(80, 95, 182);
+    width: fit-content;
+    padding: 32px 190px;
+    margin: 0 auto;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    border-radius: 10px;
+    text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    
+   }

@@ -22,7 +22,7 @@ export class AdicionarComponent implements OnInit {
     
   }
 
-  adicionar() {
+  adicionar() { 
     if (this.adicionarPut['tipo'] == "ativo") {
       this.AtivosService.adicionar(this.adicionarPut).subscribe(
         dados => {

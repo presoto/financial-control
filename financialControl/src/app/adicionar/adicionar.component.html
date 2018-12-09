@@ -1,4 +1,5 @@
 <div class="example-container">
+    <h1> Cadastro de valores </h1><br>
   <mat-form-field>
     <input matInput placeholder="Origem" [(ngModel)]="adicionarPut.origem "> 
   </mat-form-field>
@@ -19,5 +20,5 @@
       <mat-option value="passivo">Passivo</mat-option>
     </mat-select>
   </mat-form-field>
-  <button mat-flat-button color="accent" (click)="adicionar()">Adicionar <mat-icon>add_circles</mat-icon></button>
+  <button mat-flat-button color="accent" class="button" (click)="adicionar()">Adicionar <mat-icon>add_circles</mat-icon></button>
 </div>
