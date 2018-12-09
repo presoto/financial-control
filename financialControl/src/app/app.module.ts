@@ -24,6 +24,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import { routing } from './app.routing';
 
 
 @NgModule({
@@ -69,7 +70,8 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
     MatAutocompleteModule,
     FormsModule,
     MatDatepickerModule,
-    MatSortModule
+    MatSortModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
