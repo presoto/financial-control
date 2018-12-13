@@ -1,0 +1,24 @@
+<div class="example-container">
+      <h1> Bem Vindo </h1><br>
+    <mat-form-field>
+        <mat-label>Nome</mat-label>
+      <input matInput placeholder="Origem" [(ngModel)]="adicionarPut.nome "> 
+    </mat-form-field>
+  
+    <mat-form-field>
+        <mat-label>CPF</mat-label>
+        <input matInput type="number" placeholder="informe o valor" required name="quantidade" [(ngModel)]="adicionarPut.cpf ">
+    </mat-form-field>
+  
+    <mat-form-field>
+        <mat-label>Data de nascimento</mat-label>
+        <input matInput type="date" placeholder="informe a data" required name="data" [(ngModel)]="adicionarPut.data ">
+    </mat-form-field>
+  
+    <mat-form-field>
+        <mat-label>Endereço</mat-label>
+      <input matInput placeholder="Endereço" [(ngModel)]="adicionarPut.endereco "> 
+    </mat-form-field>
+    <a href="/">
+    <button mat-flat-button color="accent" class="button" (click)="cadastrar()">Cadastrar <mat-icon>add_circles</mat-icon></button></a>
+  </div>

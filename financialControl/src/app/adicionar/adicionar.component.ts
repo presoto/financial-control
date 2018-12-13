@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AtivosService } from '../Services/ativos.service';
 import { PassivosService } from '../Services/passivos.service';
+import {MatSnackBar} from '@angular/material';
 
 
 @Component({
@@ -13,6 +14,7 @@ export class AdicionarComponent implements OnInit {
   constructor(
     private AtivosService: AtivosService,
     private PassivosService: PassivosService,
+    public snackBar: MatSnackBar
   ) { }
 
   public teste: any;
@@ -29,11 +31,13 @@ export class AdicionarComponent implements OnInit {
           this.AtivosService.listar().subscribe(
             dados => {
               this.teste = dados;
+              this.openSnackBar()
               // console.log(this.ativos);
             },
             erro => console.error(erro)
           );
-          console.log("deu certo ativo", dados);
+          // alert("cadastrado com sucesso")
+          // console.log("deu certo ativo", dados);
         },
         erro => console.error(erro)
       );
@@ -43,14 +47,22 @@ export class AdicionarComponent implements OnInit {
           this.AtivosService.listar().subscribe(
             dados => {
               this.teste = dados;
+              this.openSnackBar()
               // console.log(this.ativos);
             },
             erro => console.error(erro)
           );
-          console.log("deu certo passivo", dados);
+          // alert("cadastrado com sucesso")
+          // console.log("deu certo passivo", dados);
         },
         erro => console.error(erro)
       );
     }
   }
+  openSnackBar() {
+    this.snackBar.open('error.message', 'this.action',
+      { duration: 1000
+      });
+  }
+
 }

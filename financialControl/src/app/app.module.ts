@@ -25,6 +25,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import { routing } from './app.routing';
+import { NovousuarioComponent } from './novousuario/novousuario.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { routing } from './app.routing';
     AtivosComponent,
     HistoricoComponent,
     FormularioComponent,
-    AdicionarComponent
+    AdicionarComponent,
+    NovousuarioComponent
   ],
   imports: [
     BrowserModule,

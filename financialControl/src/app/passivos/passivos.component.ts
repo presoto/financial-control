@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { PassivosService } from '../Services/passivos.service';
 
 
+
 @Component({
   selector: 'passivos',
   templateUrl: './passivos.component.html',
@@ -28,6 +29,7 @@ export class PassivosComponent implements OnInit {
       dados => {
         this.PassivosService.listar().subscribe(
           dados => {
+            location.reload();
             this.passivos = dados;
             console.log(this.passivos);
           },
@@ -42,6 +44,7 @@ export class PassivosComponent implements OnInit {
   editar(editar) {
     this.PassivosService.editar(editar).subscribe(
       dados => {
+        location.reload();
         this.PassivosService.listar().subscribe(
           dados => {
             this.passivos = dados;

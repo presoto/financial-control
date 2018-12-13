@@ -31,6 +31,7 @@ export class AtivosComponent implements OnInit {
       dados => {
         this.AtivosService.listar().subscribe(
           dados => {
+            location.reload();
             this.ativos = dados;
             // console.log(this.ativos);
           },
@@ -45,6 +46,7 @@ editar(editar) {
     dados => {
       this.AtivosService.listar().subscribe(
         dados => {
+          location.reload();
           this.ativos = dados;
           // console.log(this.ativos);
         },
